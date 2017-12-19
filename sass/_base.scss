@@ -1,0 +1,147 @@
+/*
+COLORS
+
+Primary: #eb2f64
+Primary light: #FF3366
+Primary dark: #BA265D
+
+Grey light 1: #faf9f9
+Grey light 2: #f4f2f2
+Grey light 3: #f0eeee
+Grey light 4: #ccc
+
+Grey dark 1: #333
+Grey dark 2: #777
+Grey dark 3: #999
+
+New Colors
+
+Color 1: #f4a679;
+
+Color 2: #cf4273;
+Color 3: #ce205a;
+
+Color: #ffa859;
+Color : #ff9943;
+
+Color : #86114b;
+color : #a11948;
+Color : #c1324c;
+Color : #e44f44;
+
+
+
+Color Pirmary: #f46b4d;
+Color Primary Light: #f5856c;
+Color Primary Dark: #f5451d;
+
+Color Secondary: #ce205a;
+Color Secondary Light: #cf4273;
+Color Secondary Dark: #86114b;
+
+Color Black: #1b1b1b;
+Color Grey Dark: #3d3d3d;
+Color Grey Light: #bbbbbb;
+
+
+#89f7fe → #66a6ff
+
+
+#ebf4f6 • #bdeaee • #76b4bd • #58668b • #5e5656
+
+#ffb997
+#f67e7d
+#843b62
+#0b032d
+#74546a
+
+
+
+#cc2b5e → #753a88
+
+#43cea2 → #185a9d
+
+#ed4264 → #ffedbc
+
+*/
+
+// CUSTOM CSS PROPERTIES
+:root {
+    --color-primary: #f46b4d;
+    --color-primary-light: #f5856c;
+    --color-primary-dark: #f5451d;
+
+    --color-secondary: #ce205a;
+    --color-secondary-light: #cf4273;
+    --color-secondary-dark: #86114b;
+
+    --color-1: #cc2b5e;
+    --color-2: #ff6978;
+    --color-3: #ffa69e;
+    --color-4: #fffcf9;
+    --color-5: #b1ede8;
+    --color-6: #753a88;
+
+    --color-grey-light-1: #faf9f9;
+    --color-grey-light-2: #f4f2f2;
+    --color-grey-light-3: #f0eeee;
+    --color-grey-light-4: #ccc;
+
+    --color-grey-superlight: #d8d8d8;
+
+    --color-grey-dark-1: #333;
+    --color-grey-dark-2: #777;
+    --color-grey-dark-3: #999;
+
+    --color-dark: #1b1b1b;
+    --color-medium-dark: #3d3d3d;
+    --color-light: #bbbbbb;
+
+    --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, .3);
+    --shadow-light: 0 2rem 5rem rgba(0, 0, 0,.08);
+
+    --grey-line: 1px solid var(--color-grey-light-4);
+}
+
+$bp-desktop: 100em; // 1600px
+$bp-sm-desktop: 90em; // 1440px
+$bp-largest: 75em;  // 1200px / 16(font-size of 1 em) = 75
+$bp-large: 68.75em; // 1100px
+$bp-medium: 56.25em; // 900px
+$bp-small: 37.5em; // 600px
+$bp-smallest: 31.25em; // 500px
+$bp-phone: 28.75em; // 460px
+$bp-tiny: 22.5em; // 360 - super small phone screens
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    // To Allow for easier unit measurements we are setting base font size to 10px = 1rem
+    font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
+
+    @media only screen and (max-width: $bp-large) {
+        font-size: 50%;
+    }
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--color-grey-dark-2);
+    background-image: linear-gradient(to left bottom, var(--color-1), var(--color-6));
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+}

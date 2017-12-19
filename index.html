@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+        
+        <title>GigMap -- Tour Visualizer</title>
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <img src="img/gigmap.png" alt="gigmap logo" class="logo">
+        
+                <form action="#" class="search">
+                    <input type="text" class="search__input" placeholder="Search Musical Artist">
+                    <button class="search__button">
+                        <svg class="search__icon">
+                            <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+                        </svg>
+                    </button>
+                    <div class="search__error">
+                        <svg class="search__error-icon">
+                            <use xlink:href="img/sprites.svg#icon-error"></use>
+                        </svg>
+                        <span>Please enter an artist's name</span>
+                    </div>
+                </form>
+
+                <nav class="user-nav">
+                        <div class="user-nav__icon-box band-select">
+                            <p class="user-nav__text">Artist</p>
+                            <svg class="user-nav__icon">
+                                <use xlink:href="img/sprites.svg#icon-users"></use>
+                            </svg>
+                            <span class="user-nav__notification">7</span>
+                            <ul class="dropdown-content">
+                            </ul>
+                        </div>
+                        
+                    <div class="user-nav__icon-box year-select">
+                        <p class="user-nav__text">Tour Year</p>
+                        <svg class="user-nav__icon">
+                            <use xlink:href="img/sprites.svg#icon-calendar"></use>
+                        </svg>
+                        <ul class="year-dropdown-content">
+                            
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <div class="content">
+                <main class="map-view">
+                    <div id="map"></div>
+                </main>
+                <nav class="sidebar">
+                    <div class="results-bar">
+                        <div class="preloader"><img src="img/ajax-loader.gif" /></div>
+                        <div class="results-bar__title hidden">
+                            <span id="results-title">Musical Artist</span> 
+                            <span> - </span>
+                            <span id="results-year">Year</span>
+                        </div>
+                    </div>
+                    <div class="results">
+                        <!-- <button class="btn-inline">Show all <span>&rarr;</span></button> -->
+                    </div>
+                    <div class="legal">
+                        <span>&copy; 2017 by Mike Bush. All rights reserved.</span>
+                        <span>Concert data provided by <a href="http://www.songkick.com" target="__blank"> Songkick</a></span>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDd2YiG5SZRDx96i1rzeX-VSUUYbBvu0Lg&callback=initMap">
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+        <script	src="js/app2.js"></script>
+    </body>
+</html>

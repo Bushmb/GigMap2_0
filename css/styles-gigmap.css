@@ -1,0 +1,247 @@
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+header {
+	overflow:hidden;
+	height:90px;
+	z-index:15;
+	color: darkgray;
+}
+body {
+	background-color: #424242;
+}
+
+span {
+	font-family: 'Yantramanav', sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	color: #EAEAEA;
+}
+
+#search-bar {
+	display: inline-block;
+	width:100%;
+	height: 50px;
+	padding: 5px;
+	background-color: #616263;
+	overflow:hidden;
+}
+
+#messages {
+
+	z-index: 30;
+}
+
+#yearSelector {
+	margin-top: 10px;
+	margin-left: 12px;
+	display: inline-block;
+	float: left;
+}
+
+.search {
+	margin-top: 10px;
+	margin-left: 15px;
+	display: inline-block;
+	float: left;
+}
+
+
+#dropdown {
+	display: inline-block;
+	margin-left: 12px;
+	margin-top: 12px;
+}
+
+.errMsg, .noInput{
+  
+  font-family: 'Yantramanav', sans-serif;
+  font-weight: 100;
+  margin-left: 10px;
+  margin-top: -1px;
+  text-align: left;
+  color: red;
+  font-size: 125%;
+}
+
+#errContainer {
+  z-index: 50;	
+  display: inline-block;
+  margin: 5px auto;
+  width: 100%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+}
+
+.hide {display:none;}
+
+
+
+#main {
+	position: relative;
+	max-width: 1920px;
+	margin: 0 auto;
+	height:100%;
+
+}
+
+#map {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+
+}
+
+#results-bar {
+	-webkit-backdrop-filter: blur(20px);
+	backdrop-filter: blur(20px);
+	position: absolute;
+	display: inline-block;
+	top: 0px;
+	right: 0px;
+	z-index: 10;
+	float: right;
+	width: 277px;
+	height: 100%;
+	background-color: rgba(0,0,0,0.01);
+	overflow-y: scroll;
+}
+
+.result {
+	-webkit-backdrop-filter: blur(20px);
+	backdrop-filter: blur(20px);
+	font-family: 'Yantramanav', sans-serif;
+	font-size: 16px;
+    margin: 3px, 3px;
+    float: left;
+    width: 272px;
+    min-height: 60px;
+    height: auto;
+    border: 2px solid transparent;
+    color: white;
+    padding: 0px;
+    background: rgba(30,30,30,0.65);
+    /*#111111;*/
+   
+   /*#333333*/
+}
+
+.numResult {
+	float: left;
+	width: 27px;
+	height: 100%;
+	background-color: #3AE8C9;
+	font-size: 18px;
+	color: black;
+	position: relative;
+	left: 0;
+	bottom: 0;
+	text-align: center;
+	font-weight: bold;
+	border-radius: 10px
+
+}
+
+a.fillthediv{
+	display:block;
+	height:100%;
+	width:100%;
+	text-decoration: none;
+	color:white;
+}
+
+a:hover{color:#4EBBE2;}
+
+.fulldivhead {
+	margin-left: 25px;
+	padding-left: 5px;
+}
+
+.fulldivp {
+	padding-left: 5px;
+	margin-left: 25px;
+
+}
+
+.logo {
+	display: block;
+	float:left;
+	margin-left: 5px;
+}
+
+.processing {
+    display:    none;
+    position:   fixed;
+    z-index:    1000000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .2 ) 
+                url('Preloader_6.gif') 
+                50% 50% 
+                no-repeat;
+}
+
+body.loading {
+    overflow: hidden;   
+}
+
+body.loading .processing {
+    display: block;
+}
+
+input[type=text] {
+    padding:5px; 
+    border:2px solid #ccc; 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+input[type=text]:focus {
+    border-color:black;
+}
+
+button[type=submit] {
+	margin-left: 5px;
+    padding:5px 15px; 
+    background:#ccc; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 20px; 
+}
+
+select, input[type="color" i][list] {
+	background-color: rgb(50, 50, 50);
+	color: white;
+	font: 15px BlinkMacSystemFont;
+}
+
+.showChoice {
+	position: relative;
+	z-index: 20;
+	float: right;
+	font-family: 'Yantramanav', sans-serif;
+	font-size: 25px;
+	font-weight: 900;
+	color: white;
+	margin-right: 10px;
+	margin-top: -3px;
+	text-align: right;
+
+
+	
+}
+
+.err{
+	color: red;
+}
