@@ -370,7 +370,7 @@ body {
   height: 70rem;
   width: 100%;
   font-size: 1.2rem;
-  overflow: hidden; }
+  overflow-y: auto; }
   @media only screen and (max-width: 90em) {
     .results {
       height: 55rem; } }
@@ -384,7 +384,7 @@ body {
   @media only screen and (max-width: 28.75em) {
     .results {
       height: 25rem;
-      overflow: overlay; } }
+      overflow: auto; } }
   .results__item {
     position: relative;
     display: flex;
@@ -460,9 +460,6 @@ body {
 ::-webkit-scrollbar-thumb {
   background: var(--color-secondary-light);
   border-radius: 3px; }
-
-.results:hover {
-  overflow: overlay; }
 
 .error {
   padding: 1.5rem;
@@ -616,7 +613,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  overflow: hidden; }
+  height: 100%; }
   @media only screen and (max-width: 28.75em) {
     .sidebar {
       flex: 1; } }

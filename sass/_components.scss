@@ -344,8 +344,8 @@ font-weight: 600;}
     height: 70rem;
     width: 100%;
     font-size: 1.2rem;
-    overflow: hidden;
-
+    overflow-y: auto;
+    
     @media only screen and (max-width: $bp-sm-desktop) {
         height: 55rem;
     }
@@ -361,7 +361,7 @@ font-weight: 600;}
 
     @media only screen and (max-width: $bp-phone) {
         height: 25rem;
-        overflow: overlay;
+        overflow: auto;
     }
     
     &__item {
@@ -474,9 +474,9 @@ font-weight: 600;}
     border-radius: 3px;
 }
 
-.results:hover {
-    overflow: overlay;
-}
+// .results:hover {
+//     overflow: auto;
+// }
 
 .error {
     padding: 1.5rem;
